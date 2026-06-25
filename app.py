@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.title("Data Explorer")
 
-uploaded_file = st.file_uploader("apple_stock", type="csv")
+uploaded_file = st.file_uploader("Upload a CSV file", type="csv")
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
